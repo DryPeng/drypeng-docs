@@ -1,9 +1,9 @@
 {
   "private": true,
-  "version": "1.0.0",
-  "name": "cloudflare-docs",
-  "repository": "cloudflare/cloudflare-docs",
-  "description": "Cloudflare Developer Docs",
+  "version": "0.1.0",
+  "name": "drypeng-docs",
+  "repository": "DryPeng/drypeng-docs",
+  "description": "Drypeng Docs",
   "scripts": {
     "crawl-api-links": "node bin/crawl-api-links.js",
     "dev:hugo": "hugo --environment development -D -w",
