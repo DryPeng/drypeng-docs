@@ -1,3 +1,10 @@
+---
+title: Overview
+pcx_content_type: overview
+layout: overview
+weight: 1
+---
+
 <!-- This is the index page, linked by the dummy sidebar item at Introduction/_dummy-index.md -->
 # What is ClashT?
 
