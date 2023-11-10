@@ -27,18 +27,18 @@ jobs:
           hugo-version: '0.120.4'
           extended: true
 
-      - name: (env) pnpm
-        run: curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
-
-      - run: pnpm install
+      - name: pnpm
+        run: |
+             curl -L https://raw.githubusercontent.com/pnpm/self-installer/master/install.js | node
+             pnpm install
 
       - run: make build
         env:
           NODE_OPTIONS: "--max-old-space-size=8192"
 
-  #   - name: Check - Broken Links
-  #     run: pnpm run crawl
-  #    if: success()
+      - name: Check - Broken Links
+        run: pnpm run crawl
+        if: success()
 
   #   - name: Check - Infinite redirects
   #     run: npx tsm bin/find-infinite-redirects.ts
