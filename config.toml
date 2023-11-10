@@ -1,6 +1,6 @@
-baseURL = "https://developers.cloudflare.com"
+baseURL = "https://docs.cloudflare.com"
 
-title = "Cloudflare Docs"
+title = "DryPeng Docs"
 languageCode = "en"
 DefaultContentLanguage = "en"
 disableHugoGeneratorInject = true
