@@ -4,7 +4,7 @@ name: CI
 on:
   pull_request:
     branches:
-      - publish
+      - main
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
