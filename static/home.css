@@ -2248,7 +2248,7 @@ span.Tooltip---root {
     }
 }
 
-.DocsNavLogoLockup--text [data-text=Cloudflare]~[data-text=Docs] {
+.DocsNavLogoLockup--text [data-text=DryPeng]~[data-text=Docs] {
     font-weight: 500;
     margin-left: -.05em
 }
@@ -2258,7 +2258,7 @@ span.Tooltip---root {
         font-weight: 600
     }
 
-    .DocsNavLogoLockup--text [data-text=Cloudflare]~[data-text=Docs] {
+    .DocsNavLogoLockup--text [data-text=DryPeng]~[data-text=Docs] {
         font-weight: 400
     }
 }
