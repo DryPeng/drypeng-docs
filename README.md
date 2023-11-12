@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DryPeng Docs
+[Go Docs Page](https://docs.drypeng.io/)
+
+## Deployment
+
+Our docs are deployed using DryPeng Pages. Every commit pushed to production will automatically deploy to [docs.drypeng.io](https://docs.drypeng.io), and any pull requests opened will have a corresponding staging URL available in the pull request comments.
+
+## For DryPeng employees
+
+To get write access to this repo, please reach out to the **Developer Docs Channel**.
 
 ## Getting Started
 
