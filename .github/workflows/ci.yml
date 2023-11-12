@@ -11,11 +11,11 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
-job:
+jobs:
   cache:
     name: make cache
     runs-on: ubuntu-latest
-    step:
+    steps:
       - uses: actions/cache@v3
         with:
           path: |
