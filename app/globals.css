@@ -3,25 +3,138 @@
 @tailwind utilities;
 
 :root {
+  --reach-skip-nav: 1;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2
+ {
+  font-weight: 600;
+}
+
+h3,
+h4
+ {
+  font-weight: 500;
+}
+
+h5,
+h6
+ {
+  font-weight: 400;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  --sans-serif-font-family: -apple-system, Quicksand;
+  --monospace-font-family: "Chivo Mono", monospace;
+  --font-family: var(--sans-serif-font-family);
+  --html-font-size: 17px;
+  --line-height: 1.5;
+  --form-field-line-height: 1.3;
+  --focus-size: 0.1875em;
+  --button-top-padding: 0.55em;
+  --button-bottom-padding: 0.65em;
+  --button-horizontal-padding: 0.9em;
+  --button-line-height: var(--form-field-line-height);
+  --button-border-radius: 0.375em;
+  --section-vertical-padding: 6em;
+  --header-height: 4.5rem;
+  --code-font-size: 0.9em;
+  --inline-code-font-size: 0.85em;
+  --blue-selection-color: #35d0ff;
+  --gray-9: rgb(var(--gray-9-rgb));
+}
+
+@media (max-width: 1280px) {
+  html {
+    --html-font-size: 16px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 1024px) {
+  html {
+    --section-vertical-padding: 4em;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    --header-height: 4rem;
+    --code-font-size: 0.8em;
+    --inline-code-font-size: var(--code-font-size);
+  }
+}
+
+html[theme="light"] {
+  --color: 29, 31, 32;
+  --background-color-rgb: 255, 255, 255;
+  --background-color: rgb(var(--background-color-rgb));
+  --selection-background-color: var(--blue-selection-color);
+  --selection-color: #fff;
+  --code-block-color: #fff;
+  --code-block-background-color: var(--color);
+  --code-block-background-color-light-theme: var(--gray-9);
+  --code-block-scrollbar-color: hsla(0, 0%, 100%, 0.25);
+  --tab-background-color: var(--gray-9);
+  --shadow-color-rgb: var(--color);
+  --section-tiger-stripe-background-color: var(--gray-9);
+  --deemphasized-color: 54, 57, 58;
+}
+
+html[theme="dark"],
+html[theme="light"] {
+  --logo-color: 64, 64, 65;
+  --focus-color: rgba(var(--orange-rgb), 0.5);
+}
+
+html[theme="dark"] {
+  --color-rgb: 255, 255, 255;
+  --color: rgb(var(--color-rgb));
+  --background-color-rgb: var(--gray-0-rgb);
+  --background-color: rgb(var(--background-color-rgb));
+  --selection-background-color: #ff9e40;
+  --selection-color: rgb(var(--color-rgb));
+  --code-block-color: rgb(var(--color-rgb));
+  --code-block-background-color: var(--gray-05);
+  --code-block-scrollbar-color: hsla(0, 0%, 100%, 0.25);
+  --tab-background-color: var(--gray-1);
+  --shadow-color-rgb: 0, 0, 0;
+  --section-tiger-stripe-background-color: var(--gray-05);
+  --deemphasized-color: var(--gray-7);
+  color-scheme: dark;
+}
+
+[theme="dark"] [light-theme-only],
+[theme="light"] [dark-theme-only] {
+  display: none;
 }
