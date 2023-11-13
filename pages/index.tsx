@@ -1,11 +1,7 @@
 function IndexPage() {
     return (
       <div>
-        <Head>
-          <title>My page title</title>
-        </Head>
-        <Head>
-        </Head>
+        <h1>My page title</h1>
         <p>Hello world!</p>
       </div>
     )
