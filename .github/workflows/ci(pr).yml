@@ -48,16 +48,9 @@ jobs:
     name: Restore Cache
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-          cache: ${{ steps.DPM.outputs.manager }}
-          
       - uses: actions/cache@v3
         with:
           path: |
-            ~/.npm
             ${{ github.workspace }}/.next/cache
           # Generate a new cache whenever packages or source files change.
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx', 'app/components/*.tsx') }}
