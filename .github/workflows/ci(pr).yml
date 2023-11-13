@@ -44,7 +44,6 @@ jobs:
       
 
   cache:
-    needs: prepare
     name: Restore Cache
     runs-on: ubuntu-latest
     steps:
