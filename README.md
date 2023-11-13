@@ -1,9 +1,16 @@
 # DryPeng Docs
 [Go Docs Page](https://docs.drypeng.io/)
 
+- [BaiduC](https://docs.drypeng.io/baiduc/)
+- [Clash](https://docs.drypeng.io/clash-old/)
+- [ClashT](https://docs.drypeng.io/clasht/)
+- [dryOS](https://docs.drypeng.io/dryos/)
+- [MSN](https://docs.drypeng.io/msn/)
+
 ## Deployment
 
-Our docs are deployed using DryPeng Pages. Every commit pushed to production will automatically deploy to [docs.drypeng.io](https://docs.drypeng.io), and any pull requests opened will have a corresponding staging URL available in the pull request comments.
+Our docs are deployed using Cloudflare Pages. Every commit pushed to master will automatically deploy to [docs.drypeng.io](https://docs.drypeng.io).”
+
 
 ## For DryPeng employees
 
