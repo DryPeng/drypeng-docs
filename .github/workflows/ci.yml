@@ -1,10 +1,10 @@
 # This is a commint CI
-name: CI (commit)
+name: CI (PR)
 
 on:
   pull_request:
     branches:
-      - main
+      - master
   workflow_dispatch: {}
 
 concurrency:
@@ -12,11 +12,24 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  cache:
-    name: make cache
+  prepare: 
+    name: Check Out
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/cache@v3
+      - name: Check Out
+        uses: actions/checkout@v4
+
+      - name: Detect package manager
+        id: DPM
+        run: DPMcm
+      
+
+  cache:
+    needs: prepare
+    name: Restore Cache
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/cache@v4
         with:
           path: |
             ~/.npm
@@ -26,3 +39,17 @@ jobs:
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |  
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-  
+
+
+  build-test:
+    needs: cache
+    name: Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: ${{ steps.DPM.outputs.manager }} ${{ steps.DPM.outputs.command }}
+
+      - name: Build
+        run: npm run build
+
