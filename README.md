@@ -1,6 +1,7 @@
 # DryPeng Docs
 [Go Docs Page](https://docs.drypeng.io/)
 
+- [AIP](https://docs.drypeng.io/aip)
 - [BaiduC](https://docs.drypeng.io/baiduc/)
 - [Clash](https://docs.drypeng.io/clash-old/)
 - [ClashT](https://docs.drypeng.io/clasht/)
