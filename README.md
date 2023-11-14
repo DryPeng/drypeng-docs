@@ -6,6 +6,7 @@
 - [Clash](https://docs.drypeng.io/clash-old/)
 - [ClashT](https://docs.drypeng.io/clasht/)
 - [dryOS](https://docs.drypeng.io/dryos/)
+- [DynamiTB](https://docs.drypeng.io/dynamiTB])
 - [MSN](https://docs.drypeng.io/msn/)
 
 ## Deployment
