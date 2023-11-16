@@ -38,31 +38,10 @@ export default function Home({ title, description, products }: HomeProps) {
 
       <Header />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          {products.map((product) => (
-            <Link href={product.url} key={product.name}>
-              <a className={styles.card}>
-                <Image
-                  src={product.logo}
-                  alt={product.alt}
-                  width={64}
-                  height={64}
-                />
-                <h2>{product.name}</h2>
-              </a>
-            </Link>
-          ))}
-        </div>
       </main>
 
       {/* <Footer /> */}
