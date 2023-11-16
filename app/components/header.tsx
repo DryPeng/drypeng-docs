@@ -17,12 +17,13 @@ const Header = () => {
   };
 
   // Define a function to handle the search input change
-  const handleSearchChange = (e) => {
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
+  
 
   // Define a function to handle the search submit
-  const handleSearchSubmit = (e) => {
+  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Do something with the search input, such as routing to a search page
   };
