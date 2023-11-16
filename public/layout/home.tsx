@@ -28,10 +28,10 @@ type Product = {
 // Export the homepage component as a default function
 export default function Home({ title, description, products }: HomeProps) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta name="description"/>
         <link rel="stylesheet" href="/app/home.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
