@@ -7,7 +7,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // components and styles
-import Header from '@components/header.tsx'
+import Header from '@components/header'
 // import Footer from '@components/Footer'
 import styles from '@styles/home.css'
 
