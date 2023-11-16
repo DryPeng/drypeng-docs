@@ -7,9 +7,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // components and styles
-import Header from './app/components/Header'
-import Footer from './app/components/Footer'
-import styles from './public/styles/home.css'
+import Header from '@components/Header.tsx'
+// import Footer from '@components/Footer'
+import styles from '@styles/home.css'
 
 // Define the props type for the homepage component
 type HomeProps = {
@@ -71,12 +71,12 @@ export default function Home({ title, description, products }: HomeProps) {
 }
 
 // Fetch the data for the homepage props from the API
-export async function getStaticProps() {
-  // Replace this with your own API endpoint
-  const res = await fetch('https://example.com/api/home')
-  const data = await res.json()
+// export async function getStaticProps() {
+//   // Replace this with your own API endpoint
+//   const res = await fetch('https://example.com/api/home')
+//   const data = await res.json()
 
-  return {
-    props: data,
-  }
-}
+//   return {
+//     props: data,
+//   }
+// }
