@@ -9,7 +9,7 @@ import Image from 'next/image'
 // components and styles
 import Header from '@components/header'
 // import Footer from '@components/Footer'
-import styles from '@/app/home.css'
+import styles from '@app/home.css'
 
 // Define the props type for the homepage component
 type HomeProps = {
