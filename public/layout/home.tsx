@@ -9,7 +9,6 @@ import Image from 'next/image'
 // components and styles
 import Header from '@components/header'
 // import Footer from '@components/Footer'
-import styles from '../../../app/home.css'
 
 // Define the props type for the homepage component
 type HomeProps = {
@@ -33,6 +32,7 @@ export default function Home({ title, description, products }: HomeProps) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="stylesheet" href="/app/home.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
