@@ -65,7 +65,7 @@ export default function Home({ title, description, products }: HomeProps) {
         </div>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -31,7 +31,7 @@ const Header = () => {
   // Use hotkeys hook to bind the ctrl+k shortcut to focus the search input
   useHotkeys('ctrl+k', () => {
     // Find the search input element by its id and focus it
-    document.getElementById('search-input').focus();
+    document.getElementById('search-input')!.focus();
   });
 
   // Return the JSX code for the header
