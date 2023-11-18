@@ -1,8 +1,10 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
-  output: 'export',
-}
+module.exports = {
+  target: "serverless",
+  distDir: "out",
+};
+
  
 module.exports = nextConfig
