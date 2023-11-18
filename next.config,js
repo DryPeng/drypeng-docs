@@ -1,10 +1,13 @@
-/**
- * @type {import('next').NextConfig}
- */
-module.exports = {
-  target: "serverless",
-  distDir: ".vercel/output/static",
-};
+// next.config.js
 
+
+const withMDX = require('@next/mdx')()
  
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // Configure `pageExtensions` to include MDX files
+  pageExtensions: [pages/**/*.mdx', 'pages/**/*.md'],
+  // Optionally, add any other Next.js config below
+}
+ 
+module.exports = withMDX(nextConfig)
