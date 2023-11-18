@@ -19,6 +19,8 @@
       }
     ],
     "baseUrl": "./",
+    "outDir": "out",
+    "rootDir": "./",
     "paths": {
       "@/*": ["./"],
       "@components/*": ["./app/components/*"],
