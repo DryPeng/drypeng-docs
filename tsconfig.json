@@ -19,8 +19,6 @@
       }
     ],
     "baseUrl": "./",
-    "outDir": "out",
-    "rootDir": "./",
     "paths": {
       "@/*": ["./"],
       "@components/*": ["./app/components/*"],
@@ -28,6 +26,6 @@
       "@layout/*": ["./public/layout/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.md", "**/*.mdx", "app/components/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "app/components/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
