@@ -1,5 +1,3 @@
-export const runtime = 'experimental-edge';
-
 function IndexPage() {
     return (
       <div>

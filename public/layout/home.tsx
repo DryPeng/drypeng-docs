@@ -1,6 +1,3 @@
-// Thank you for cloudflare
-export const runtime = 'experimental-edge';
-
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
