@@ -3,7 +3,7 @@
  */
 module.exports = {
   target: "serverless",
-  distDir: "out",
+  distDir: ".vercel/output/static",
 };
 
  
