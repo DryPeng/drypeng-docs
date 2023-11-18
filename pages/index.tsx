@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 function IndexPage() {
     return (
       <div>

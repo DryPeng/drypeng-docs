@@ -1,5 +1,5 @@
 // Thank you for cloudflare
-
+export const runtime = 'edge';
 
 import React from 'react'
 import Head from 'next/head'
