@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 function IndexPage() {
     return (
