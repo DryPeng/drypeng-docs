@@ -33,7 +33,7 @@ export default function Home({ title, description, products }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      {/* <Header /> */}
 
       <main>
         <h1>
