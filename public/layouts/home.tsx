@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // components and styles
-import Header from '@components/header'
+import Header from '@modules/header'
 // import Footer from '@components/Footer'
 
 // Define the props type for the homepage component
