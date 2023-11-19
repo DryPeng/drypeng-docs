@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 // components and styles
 import Header from '@components/header'
-import styles from '/app/home.css'
+import styles from './app/home.css'
 
 function IndexPage() {
     return (
