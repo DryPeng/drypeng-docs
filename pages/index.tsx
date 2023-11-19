@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // layout and styles
-import layouts from '@layouts/home.tsx'
+import layouts from '@layouts/home'
 import styles from './app/home.module.css'
 
 function IndexPage() {
