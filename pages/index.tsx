@@ -15,7 +15,6 @@ function IndexPage() {
        <Head>
         <title>DryPeng Docs</title>
         <meta name="description"/>
-        <link rel="stylesheet" href="/app/home.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
