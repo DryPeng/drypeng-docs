@@ -2,7 +2,7 @@
 
 
 import { ReactNode } from "react";
-import Header from '@modules/header'
+import Header from '@modules/header.tsx'
 // import Footer from '@modules/footer'
 
 export default function Layout({ children }: { children: ReactNode }) {

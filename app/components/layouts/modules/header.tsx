@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 import FA from '@FA/css/all.min.css'
 
 
-export default function Header( { children }: { children: React.ReactNode }) {
+export default function Header({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
