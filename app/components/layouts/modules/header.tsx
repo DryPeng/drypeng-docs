@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useTheme } from 'next-themes'
+// import { useTheme } from 'next-themes'
 import FA from '@FA/css/all.min.css'
 
 
@@ -40,7 +40,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
           </nav>
         </div>
         <div className="flex flex-row items-center justify-end space-x-4">
-          <button
+          {/* <button
             aria-label="Toggle Dark Mode"
             type="button"
             className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
@@ -55,7 +55,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
                 )}
               </div>
             )}
-          </button>
+          </button> */}
         </div>
       </div>
       {children}
