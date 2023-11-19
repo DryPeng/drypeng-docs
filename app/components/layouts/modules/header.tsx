@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { MoonIcon, SunIcon } from '@heroicons/react/solid'
 
-export default function Header( { children }: { children: React.ReactNode }) {
+export default function Header( { children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
