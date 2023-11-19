@@ -12,7 +12,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
   // const { theme, setTheme } = useTheme()
 
   // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
+  // useEffect(() => setMounted(true), [])
 
   return (
     <header className="flex flex-col fixed w-full z-10 top-0 bg-white dark:bg-black border-b border-gray-100 dark:border-gray-700">
