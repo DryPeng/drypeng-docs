@@ -21,7 +21,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
           <Link href="/">
             <a className="flex items-center text-gray-900 dark:text-gray-100">
               <span className="sr-only">Home</span>
-              <img src="/public/dpAll.svg" alt="Logo" className="h-8 w-auto" />
+              <img src="./public/dpAll.svg" alt="Logo" className="h-8 w-auto" />
             </a>
           </Link>
           <nav className="hidden md:flex space-x-4">
