@@ -22,7 +22,7 @@ function IndexPage() {
       <div>
 
         <h1 class="leading">Welcome to DryPeng</h1>
-        <p class="subTitle">Explore guides and tutorials to start use<br/>DryPeng's product</p>
+        <p class="subTitle">Explore guides and tutorials to start use<br/>DryPeng&apos;s product</p>
 
       </div>
       {/* <Footer /> */}
