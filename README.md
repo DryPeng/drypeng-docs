@@ -1,13 +1,13 @@
 # DryPeng Docs
 [Go Docs Page](https://docs.drypeng.io/)
 
-- [AIP](https://docs.drypeng.io/aip)
+- [AIP](https://docs.drypeng.io/aip/)
 - [BaiduC](https://docs.drypeng.io/baiduc/)
 - [Clash](https://docs.drypeng.io/clash-old/)
 - [ClashT](https://docs.drypeng.io/clasht/)
 - [dryOS](https://docs.drypeng.io/dryos/)
 - [LEDS](https://docs.drypeng.io/leds)
-- [DynamiTB](https://docs.drypeng.io/dynamiTB])
+- [DynamiTB](https://docs.drypeng.io/dynamiTB)
 - [MSN](https://docs.drypeng.io/msn/)
 
 ## Deployment
