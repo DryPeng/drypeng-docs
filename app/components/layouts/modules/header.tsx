@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 // import { useTheme } from 'next-themes'
-import FA from '@FA/css/all.min.css'
+import '@FA/css/all.min.css'
 
 
 export default function Header({ children }: { children: React.ReactNode }) {
