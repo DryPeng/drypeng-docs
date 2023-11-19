@@ -1,7 +1,7 @@
 // @modules/header
 
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, ReactNote } from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { MoonIcon, SunIcon } from '@heroicons/react/solid'
