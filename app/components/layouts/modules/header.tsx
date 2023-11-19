@@ -1,12 +1,13 @@
 // @modules/header
 
 
-import React, { useEffect, useState, ReactNote } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+import FA from '@FA/css/all.min.css'
 
-export default function Header( { children }: { children: ReactNode }) {
+
+export default function Header( { children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -20,7 +21,7 @@ export default function Header( { children }: { children: ReactNode }) {
           <Link href="/">
             <a className="flex items-center text-gray-900 dark:text-gray-100">
               <span className="sr-only">Home</span>
-              <img src="/static/images/logo.svg" alt="Logo" className="h-8 w-auto" />
+              <img src="/public/dpAll.svg" alt="Logo" className="h-8 w-auto" />
             </a>
           </Link>
           <nav className="hidden md:flex space-x-4">
@@ -48,9 +49,9 @@ export default function Header( { children }: { children: ReactNode }) {
             {mounted && (
               <div className="flex items-center justify-center h-full w-full">
                 {theme === 'dark' ? (
-                  <SunIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+                  <i className="fa-light fa-sun h-6 w-6 text-gray-800 dark:text-gray-200" />
                 ) : (
-                  <MoonIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+                  <i className="fa-light fa-moon h-6 w-6 text-gray-800 dark:text-gray-200" />
                 )}
               </div>
             )}
