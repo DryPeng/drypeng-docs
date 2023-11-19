@@ -1,4 +1,4 @@
-// header @components/header.tsx
+// @modules/header.tsx
 
 
 import React, { useState } from 'react';

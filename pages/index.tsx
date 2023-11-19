@@ -21,8 +21,8 @@ function IndexPage() {
       {/* <Header /> */}
       <div>
 
-        <h1 class="leading">Welcome to DryPeng</h1>
-        <p class="subTitle">Explore guides and tutorials to start use<br/>DryPeng&apos;s product</p>
+        <h1 className="leading">Welcome to DryPeng</h1>
+        <p className="subTitle">Explore guides and tutorials to start use<br/>DryPeng&apos;s product</p>
 
       </div>
       {/* <Footer /> */}
