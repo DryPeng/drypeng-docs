@@ -6,7 +6,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // components and styles
-import Header from '@components/header'
+import Header from '@modules/header'
+import Footer from '@modules/footer'
 import styles from './app/home.module.css'
 
 function IndexPage() {
