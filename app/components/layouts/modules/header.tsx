@@ -1,71 +1,63 @@
-// @modules/header.tsx
+// @modules/header
 
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useHotkeys } from 'react-hotkeys-hook';
+import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { useTheme } from 'next-themes'
+import { MoonIcon, SunIcon } from '@heroicons/react/solid'
 
-const Header = () => {
-  // Use state hooks to store the theme and the search input
-  const [theme, setTheme] = useState('light');
-  const [search, setSearch] = useState('');
+export default function Header( { children }: { children: React.ReactNode }) {
+  const [mounted, setMounted] = useState(false)
+  const { theme, setTheme } = useTheme()
 
-  // Define a function to toggle the theme
-  const toggleTheme = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light');
-  };
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), [])
 
-  // Define a function to handle the search input change
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearch(e.target.value);
-  };
-  
-
-  // Define a function to handle the search submit
-  const handleSearchSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Do something with the search input, such as routing to a search page
-  };
-
-  // Use hotkeys hook to bind the ctrl+k shortcut to focus the search input
-  useHotkeys('ctrl+k', () => {
-    // Find the search input element by its id and focus it
-    document.getElementById('search-input')!.focus();
-  });
-
-  // Return the JSX code for the header
   return (
-    <header className={`header ${theme}`}>
-      <div className="container">
-        <div className="logo">
-          {/* Use Image component to display the logo image */}
-          <Image src="/favicon,ico" alt="DryPeng-Logo" width={100} height={50} />
+    <header className="flex flex-col fixed w-full z-10 top-0 bg-white dark:bg-black border-b border-gray-100 dark:border-gray-700">
+      <div className="flex flex-row items-center justify-between h-14 px-4">
+        <div className="flex flex-row items-center justify-start space-x-4">
+          <Link href="/">
+            <a className="flex items-center text-gray-900 dark:text-gray-100">
+              <span className="sr-only">Home</span>
+              <img src="/static/images/logo.svg" alt="Logo" className="h-8 w-auto" />
+            </a>
+          </Link>
+          <nav className="hidden md:flex space-x-4">
+            <Link href="/about">
+              <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">About</a>
+            </Link>
+            <Link href="/blog">
+              <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Blog</a>
+            </Link>
+            <Link href="/projects">
+              <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Projects</a>
+            </Link>
+            <Link href="/contact">
+              <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">Contact</a>
+            </Link>
+          </nav>
         </div>
-        <div className="menu">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-        <div className="search">
-          <form onSubmit={handleSearchSubmit}>
-            <input
-              type="text"
-              id="search-input"
-              value={search}
-              onChange={handleSearchChange}
-              placeholder="Search..."
-            />
-            <button type="submit">Go</button>
-          </form>
-        </div>
-        <div className="theme">
-          {/* Use a button element to create a theme toggle */}
-          <button onClick={toggleTheme}>{theme === 'light' ? '🌙' : '☀️'}</button>
+        <div className="flex flex-row items-center justify-end space-x-4">
+          <button
+            aria-label="Toggle Dark Mode"
+            type="button"
+            className="bg-gray-200 dark:bg-gray-800 rounded p-3 h-10 w-10"
+            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+          >
+            {mounted && (
+              <div className="flex items-center justify-center h-full w-full">
+                {theme === 'dark' ? (
+                  <SunIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+                ) : (
+                  <MoonIcon className="h-6 w-6 text-gray-800 dark:text-gray-200" />
+                )}
+              </div>
+            )}
+          </button>
         </div>
       </div>
+      {children}
     </header>
-  );
-};
-
-export default Header;
+  )
+}
