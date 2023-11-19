@@ -8,11 +8,11 @@ import Header from '@modules/header'
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div>
-    <Head>
+    <head>
         <title>DryPeng Docs</title>
         <meta name="DryPeng&apos;s product Docs"/>
         <link rel="icon" href="/favicon.ico" />
-    </Head>
+    </head>
 
       <Header />
 
