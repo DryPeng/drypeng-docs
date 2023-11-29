@@ -29,7 +29,7 @@ const Page = () => {
       </Head>
       <Topbar />
       <div>
-        <Image src="" alt="Background image" layout="fill" objectFit="cover" />
+        <Image src="" alt="" layout="fill" objectFit="cover" />
       </div>
       <div>
         <h1>Welcome to DryPeng Docs</h1>
