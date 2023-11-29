@@ -14,13 +14,8 @@ export default function Layout({ children }: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" />
     </head>
 
-        <Header>
-            <h1 className="style.leading">Welcome to DryPeng</h1>
-            <p className="style.subTitle">Explore guides and tutorials to start use<br/>DryPeng&apos;s product</p>
-        </Header>
-
-      {children}
-
+      <Header />
+      <main>{children}</main>
       {/* <Footer /> */}
 
     </div>
