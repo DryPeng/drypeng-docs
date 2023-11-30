@@ -7,7 +7,7 @@ import Link from 'next/link'
 import '@FA/css/all.min.css'
 
 
-export default function Header({ children }: { children: React.ReactNode }) {
+export default function Header () {
   // const [mounted, setMounted] = useState(false)
   // const { theme, setTheme } = useTheme()
 
@@ -58,7 +58,6 @@ export default function Header({ children }: { children: React.ReactNode }) {
           </button> */}
         </div>
       </div>
-      {children}
     </header>
   )
 }

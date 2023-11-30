@@ -23,6 +23,7 @@
       "@/*": ["./"],
       "@components/*": ["./app/components/*"],
       "@modules/*": ["./app/components/layouts/modules/*"],
+      "@styles/*": ["./app/components/layouts/css/*"],
       "@layouts/*": ["./app/components/layouts/*"],
       "@FA/*": ["./public/FA6/*"]
     }
