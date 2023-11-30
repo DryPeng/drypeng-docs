@@ -6,9 +6,10 @@
 - [Clash](https://docs.drypeng.io/clash-old/)
 - [ClashT](https://docs.drypeng.io/clasht/)
 - [dryOS](https://docs.drypeng.io/dryos/)
-- [DynamiTB](https://docs.drypeng.io/dynamiTB)
+- [DynamiTB](https://docs.drypeng.io/dynamiTB/)
 - [LEDS](https://docs.drypeng.io/leds)
-- [Racion Lite](https://docs.drypeng.io/racion-lite)
+- [Pantalla](https://docs.drypeng.io/pantalla/)
+- [Racion Lite](https://docs.drypeng.io/racion-lite/)
 - [MSN](https://docs.drypeng.io/msn/)
 
 ## Deployment
