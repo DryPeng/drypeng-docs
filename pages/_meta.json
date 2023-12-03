@@ -1,0 +1,49 @@
+{
+  "*": {
+    "type": "page"
+  },
+
+
+  "index": {
+    "title": "Home",
+    "theme": {
+      "toc": false,
+      "typesetting": "article"
+    },
+    "display": "hidden"
+
+  },
+  "about": {
+    "title": "About",
+    "theme": {
+      "toc": false
+    }
+  },
+
+  "org": {
+    "title": "Organize",
+    "display": "hidden"
+  },
+  "staff": {
+    "title": "Staff",
+    "display": "hidden"
+  },
+  "manager": {
+    "title": "Manager",
+    "display": "hidden"
+  },
+  "psl": {
+    "title": "PSL",
+    "display": "hidden"
+  },
+
+
+
+  "404": {
+    "display": "hidden",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}

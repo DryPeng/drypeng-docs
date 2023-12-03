@@ -4,30 +4,20 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./"],
-      "@components/*": ["./app/components/*"],
-      "@modules/*": ["./app/components/layouts/modules/*"],
-      "@styles/*": ["./app/components/layouts/css/*"],
-      "@layouts/*": ["./app/components/layouts/*"],
-      "@FA/*": ["./public/FA6/*"]
-    }
+    "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", "app/components/*.tsx", ".next/types/**/*.ts"],
+  "paths": {
+    "@FA/*": ["./public/FA6/svgs/*"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js", "pages/_app.js"],
   "exclude": ["node_modules"]
 }
