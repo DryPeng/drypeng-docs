@@ -45,11 +45,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <span>
-        Inside Docs, employees only.<br></br>
+        Product Docs<br></br>
         <span>
           {new Date().getFullYear()} &copy; {' '} 
             <a href="https://drypeng.io" target="_blank">
-              DryPeng International
+              DryPeng
             </a>
         </span>
       </span>
