@@ -1,1 +1,0 @@
-// @modules/docs-footer.tsx
