@@ -44,16 +44,26 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <span>
-        Product Docs<br></br>
-        <span>
-          {new Date().getFullYear()} &copy; {' '} 
-            <a href="https://drypeng.io" target="_blank">
+      <div className="flex w-full flex-col items-center sm:items-start">
+        <div>
+          <a
+            className="flex items-center gap-1 text-current"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="DryPeng"
+            href="https://drypeng.io"
+          >
+            <span>Powered by</span>
+            <span style={{ fontWeight: 600 }}>
               DryPeng
-            </a>
-        </span>
-      </span>
-    )   
+            </span>
+          </a>
+        </div>
+        <p className="mt-6 text-xs">
+          © {new Date().getFullYear()} DryPeng Docs.
+        </p>
+      </div>
+    )
   },
   primaryHue: {
     light: 200,
