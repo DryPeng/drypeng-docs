@@ -11,32 +11,14 @@
       "typesetting": "article"
     },
     "display": "hidden"
-
-  },
-  "about": {
-    "title": "About",
-    "theme": {
-      "toc": false
-    }
   },
 
-  "org": {
-    "title": "Organize",
+  "clash": {
     "display": "hidden"
   },
-  "staff": {
-    "title": "Staff",
+  "terms": {
     "display": "hidden"
   },
-  "manager": {
-    "title": "Manager",
-    "display": "hidden"
-  },
-  "psl": {
-    "title": "PSL",
-    "display": "hidden"
-  },
-
 
 
   "404": {
