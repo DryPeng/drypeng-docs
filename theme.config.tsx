@@ -79,6 +79,7 @@ const config: DocsThemeConfig = {
     light: 100,
     dark: 100
   },
+  gitTimestamp: "Last updated on",
   toc: {
     backToTop: true
   }
