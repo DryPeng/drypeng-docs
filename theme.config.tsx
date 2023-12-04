@@ -19,12 +19,18 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/DryPeng/drypeng-docs',
   useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return {
+        titleTemplate: '%s – Nextra'
+      }
+    }
   },
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter()
     const { frontMatter } = useConfig()
     const url =
-      'https://inside.docs.drypeng.io' +
+      'https://docs.drypeng.io' +
       (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
    
     return (
@@ -54,7 +60,7 @@ const config: DocsThemeConfig = {
             href="https://drypeng.io"
           >
             <span>Powered by</span>
-            <span style={{ fontWeight: 600 }}>
+            <span style={{ marginLeft: '.4em', fontWeight: 600 }}>
               DryPeng
             </span>
           </a>
