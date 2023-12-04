@@ -1,0 +1,40 @@
+import { RemoteContent } from "nextra/data";
+import { buildDynamicMDX, buildDynamicMeta } from "nextra/remote";
+import { useFetch } from "@/hooks";
+
+export async function getTerms() {
+  const { results: data } = await useFetch({
+    url: https://dns1.icechui.com/mdx/dpterms/,
+  });
+  return { data };
+}
+
+export async function getStaticPaths() {
+  const { data } = await getTerms();
+  return {
+    paths: data.map(({ name }) => ({ params: { name } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { name: __name__ } }) {
+  const { data } = await getTerms();
+  const { url } = data.find(({ name }) => name === __name__);
+  const { name, ...rest } = await useFetch({ url });
+  const content = `---
+title: ${name}
+---
+# ${name}
+\`\`\`
+${JSON.stringify({ name, ...rest }, null, 2)}
+\`\`\`
+`;
+  return {
+    props: {
+      ...(await buildDynamicMDX(content)),
+      ...(await buildDynamicMeta()),
+    },
+  };
+}
+
+<RemoteContent />
