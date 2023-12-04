@@ -15,9 +15,9 @@ const config: DocsThemeConfig = {
     </>
   ),
   project: {
-    link: 'https://github.com/DryPeng/inside-docs',
+    link: 'https://github.com/DryPeng/drypeng-docs',
   },
-  docsRepositoryBase: 'https://github.com/DryPeng/inside-docs',
+  docsRepositoryBase: 'https://github.com/DryPeng/drypeng-docs',
   useNextSeoProps() {
   },
   head: () => {
@@ -30,7 +30,7 @@ const config: DocsThemeConfig = {
     return (
       <>
         <meta property="og:url" content={url} />
-        <meta property="og:title" content={frontMatter.title || 'DP.inside-docs'} />
+        <meta property="og:title" content={frontMatter.title || 'DryPeng Docs'} />
         <link rel="logo" href="/public/favicon.ico" type="image/svg+xml" />
       </>
     )
