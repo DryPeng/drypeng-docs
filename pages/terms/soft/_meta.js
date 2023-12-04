@@ -1,0 +1,4 @@
+{
+  "index": Software Terms and Conditions",
+  "eula": EULAs
+}
