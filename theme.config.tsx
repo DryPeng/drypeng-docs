@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/DryPeng/drypeng-docs',
   },
-  docsRepositoryBase: 'https://github.com/DryPeng/drypeng-docs',
+  docsRepositoryBase: 'https://github.com/DryPeng/drypeng-docs/tree/master/',
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
