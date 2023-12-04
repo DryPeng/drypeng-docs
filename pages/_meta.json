@@ -14,9 +14,11 @@
   },
 
   "clash": {
+    "title": "Clash (Not-fix)",
     "display": "hidden"
   },
   "terms": {
+    "title": "Terms",
     "display": "hidden"
   },
 
