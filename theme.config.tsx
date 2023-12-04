@@ -10,7 +10,7 @@ const config: DocsThemeConfig = {
         DryPeng
       </span>
       <span style={{ marginLeft: '.4em', fontWeight: 400 }}>
-        Inside Docs
+        Docs
       </span>
     </>
   ),
