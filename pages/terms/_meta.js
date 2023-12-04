@@ -1,0 +1,10 @@
+{
+  "index": "About",
+  "-- Detail": {
+    "type": "separator",
+    "title": "Detail"
+  },
+  "cs": "Customer Support",
+  "soft": "Software",
+  "web": "Website and Internet Service"
+}
