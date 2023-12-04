@@ -1,4 +1,9 @@
 {
+  "*": {
+    "theme": {
+      "timestamp": true
+    }
+  }
   "index": "About",
   "-- Detail": {
     "type": "separator",
