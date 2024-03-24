@@ -1,9 +1,13 @@
 {
-  "index": {
+  "introduction": {
     "title": "Introduction"
   },
 
   "introduction": {
     "title": "Introduction"
-  }
+  },
+  "configuration": "Configuration",
+  "premium": "premium",
+  "runtime": "Runtime",
+  "advanced-usages": "Advanced Usages"
 }
