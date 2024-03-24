@@ -9,7 +9,7 @@ Our docs are deployed using Cloudflare Pages. Every commit pushed to master will
 
 ## Quick Access
 
-- [Clash](https://docs.drypeng.io/clash-old/)
+- [Clash](https://docs.drypeng.io/clash/)
 - [ClashT](https://docs.drypeng.io/clasht/)
 - [dryOS](https://docs.drypeng.io/dryos/)
 - [DynamiTB](https://docs.drypeng.io/dynamiTB/)
