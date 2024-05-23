@@ -17,6 +17,10 @@
     "title": "Clash (Not-fix)",
     "display": "hidden"
   },
+  "temp-notes": {
+    "title": "Notes",
+    "display": "hidden"
+  },
   "terms": {
     "title": "Terms",
     "display": "hidden"
