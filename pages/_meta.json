@@ -21,6 +21,10 @@
     "title": "Notes",
     "display": "hidden"
   },
+  "business": {
+    "title": "Business",
+    "display": "hidden"
+  },
   "terms": {
     "title": "Terms"
   },
