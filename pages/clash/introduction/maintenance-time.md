@@ -11,10 +11,11 @@ For [security reasons](https://clasht.drypeng.io/introduction/security.html), we
 
 Please check the following list to confirm whether the version you are currently using is still supported.
 
-- v1.20.0 (NEW)
+- v1.20.1 (NEW)
+- v1.20.0
 - v1.19.0
-- v1.18.1
-- v1.18.0
+- v1.18.1 *W*
+- v1.18.0 *W*
 
 ::: tip Tip
 SE means it support ended
