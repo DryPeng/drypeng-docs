@@ -1,4 +1,7 @@
 {
+  "*": {
+    "display": "true"
+  },
   "index": "介绍",
   "contracts": "合同"
 }
