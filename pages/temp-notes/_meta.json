@@ -1,3 +1,6 @@
 {
+  "*": {
+    "type": "page"
+  },
   "bba": "Big Broth Association"
 }
